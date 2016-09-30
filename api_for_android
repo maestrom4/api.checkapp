@@ -1,0 +1,22 @@
+Legend:
+c - Add
+r - read
+ra - readall
+u - Edit
+d - Delete
+ld - Link Device
+null - Do not update
+api.appcheck.dev/device/android/r/user/password/  - Check if user exist return nya "True" or "False"
+api.appcheck.dev/device/android/u/current_user/current_pass/n_email/n_username/n_password/n_name/n_mname/n_lname/ - edit 
+example 2: 
+api.appcheck.dev/device/android/u/current_user/current_pass/n_email/n_username/n_password/null/null/null/ - edit user 
+
+api.appcheck.dev/device/android/c/n_email/n_username/n_password/n_name/n_mname/n_lname/ - add new user
+api.appcheck.dev/device/android/d/user/password/email - delete user
+
+If owner sa arduino mg request sa data dapat naa cyay apikey and mac-address sa arduino
+Relationship sa arduino og android....Linking two device add device ni sa android...
+api.appcheck.dev/device/android/ld/user/password/mac-address/apikey - add new user "user_id" will be added to device table.
+
+
+Note: Create a function that checks if user unlink arduino to android this creates an error. 
